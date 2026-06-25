@@ -18,6 +18,29 @@
         .opcion:hover { background: #e1f5fe; border-color: #03a9f4; }
         .boton { width: 100%; padding: 15px; border: none; border-radius: 12px; background: #ff9800; color: white; font-size: 18px; font-weight: bold; cursor: pointer; }
         .resultado { display: none; }
+        .btn-flotante-mateken {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #FFD166;
+    color: #073B4C;
+    padding: 15px 22px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 50px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.2s, background-color 0.2s;
+    z-index: 9999;
+    font-family: sans-serif;
+}
+.btn-flotante-mateken:hover {
+    transform: scale(1.1);
+    background-color: #fffde7;
+}
     </style>
 </head>
 <body>
@@ -129,6 +152,10 @@
         document.getElementById("insignia").innerText = pct >= 80 ? "🥇" : "🥉";
     }
 </script>
+
+<a href="https://mateken2.netlify.app/" target="_blank" class="btn-flotante-mateken">
+    🤖 Ir a MateKen2
+</a>
 </body>
 </html>
 
